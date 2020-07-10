@@ -1,0 +1,103 @@
+2020-07-01 11:56:31,998 ERROR: Exception on /uploadfile [POST] [in /Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/elee/heroku_v5/microblog/app/main/routes.py", line 198, in upload_file
+    file.save(os.path.join(UPLOAD_FOLDER, filename))
+NameError: name 'UPLOAD_FOLDER' is not defined
+2020-07-01 13:04:43,393 INFO: Microblog startup [in /Users/elee/heroku_v5/microblog/app/__init__.py:86]
+2020-07-01 13:04:54,029 ERROR: Exception on /uploadfile [POST] [in /Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/elee/heroku_v5/microblog/app/main/routes.py", line 198, in upload_file
+    file.save(os.path.join(UPLOAD_FOLDER, filename))
+NameError: name 'UPLOAD_FOLDER' is not defined
+2020-07-01 13:05:54,652 INFO: Microblog startup [in /Users/elee/heroku_v5/microblog/app/__init__.py:86]
+2020-07-01 13:06:04,832 ERROR: Exception on /uploadfile [POST] [in /Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/boto3/s3/transfer.py", line 279, in upload_file
+    future.result()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/s3transfer/futures.py", line 106, in result
+    return self._coordinator.result()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/s3transfer/futures.py", line 265, in result
+    raise self._exception
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/s3transfer/tasks.py", line 126, in __call__
+    return self._execute_main(kwargs)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/s3transfer/tasks.py", line 150, in _execute_main
+    return_value = self._main(**kwargs)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/s3transfer/upload.py", line 692, in _main
+    client.put_object(Bucket=bucket, Key=key, Body=body, **extra_args)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/botocore/client.py", line 316, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/botocore/client.py", line 635, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (AccessDenied) when calling the PutObject operation: Access Denied
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/elee/heroku_v5/microblog/app/main/routes.py", line 202, in upload_file
+    upload_file_s3(f"uploads/{filename}", BUCKET)
+  File "/Users/elee/heroku_v5/microblog/app/s3_demo.py", line 18, in upload_file_s3
+    response = s3_client.upload_file(file_name, bucket, object_name)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/boto3/s3/inject.py", line 131, in upload_file
+    extra_args=ExtraArgs, callback=Callback)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/boto3/s3/transfer.py", line 287, in upload_file
+    filename, '/'.join([bucket, key]), e))
+boto3.exceptions.S3UploadFailedError: Failed to upload uploads/whatsup.txt to flaskdrive/uploads/whatsup.txt: An error occurred (AccessDenied) when calling the PutObject operation: Access Denied
+2020-07-01 13:07:01,393 INFO: Microblog startup [in /Users/elee/heroku_v5/microblog/app/__init__.py:86]
+2020-07-01 13:07:07,099 ERROR: Exception on /contents/['whatsup.txt'] [GET] [in /Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/elee/heroku_v5/microblog/app/main/routes.py", line 217, in print_file
+    s3 = boto3.resource('s3')
+NameError: name 'boto3' is not defined
+2020-07-01 13:07:57,038 INFO: Microblog startup [in /Users/elee/heroku_v5/microblog/app/__init__.py:86]
+2020-07-01 13:14:12,077 INFO: Microblog startup [in /Users/elee/heroku_v5/microblog/app/__init__.py:86]
+2020-07-01 13:16:29,167 INFO: Microblog startup [in /Users/elee/heroku_v5/microblog/app/__init__.py:86]

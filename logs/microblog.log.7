@@ -1,0 +1,109 @@
+2020-06-25 17:16:53,613 ERROR: Exception on /uploadfile [POST] [in /Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/elee/practice_docker/microblog/app/main/routes.py", line 185, in upload_file
+    file.save(os.path.join(current_app.config['UPLOAD_FOLDER'], filename))
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/werkzeug/datastructures.py", line 2725, in save
+    dst = open(dst, 'wb')
+FileNotFoundError: [Errno 2] No such file or directory: 'statuc/uploads/hello_world.txt'
+2020-06-25 17:17:19,863 INFO: Microblog startup [in /Users/elee/practice_docker/microblog/app/__init__.py:78]
+2020-06-25 17:17:23,390 ERROR: Exception on /uploadfile [POST] [in /Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/elee/practice_docker/microblog/app/main/routes.py", line 185, in upload_file
+    file.save(os.path.join(current_app.config['UPLOAD_FOLDER'], filename))
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/werkzeug/datastructures.py", line 2725, in save
+    dst = open(dst, 'wb')
+FileNotFoundError: [Errno 2] No such file or directory: 'static/uploads/hello_world.txt'
+2020-06-26 13:52:06,753 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:82]
+2020-06-26 13:58:16,687 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:82]
+2020-06-26 13:59:49,152 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:82]
+2020-06-26 14:00:19,642 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:82]
+2020-06-26 14:00:39,698 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:82]
+2020-06-26 14:01:37,933 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:82]
+2020-06-26 14:07:01,032 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:82]
+2020-06-26 14:07:04,366 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:82]
+2020-06-26 14:07:35,542 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:82]
+2020-06-26 14:09:04,003 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:82]
+2020-06-26 14:09:38,743 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:82]
+2020-06-26 14:10:01,006 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:82]
+2020-06-26 14:11:13,802 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:82]
+2020-06-26 14:11:29,182 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:82]
+2020-06-26 14:11:57,971 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:82]
+2020-06-26 14:12:20,972 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:82]
+2020-06-26 14:18:45,369 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:82]
+2020-06-26 14:31:38,954 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:82]
+2020-06-26 14:54:39,211 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:82]
+2020-06-26 14:54:48,242 ERROR: Exception on /uploadfile [GET] [in /Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1957, in make_response
+    'The view function did not return a valid response. The'
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-06-26 18:01:20,621 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:82]
+2020-06-26 18:03:34,738 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:82]
+2020-06-26 18:54:07,430 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:82]
+2020-06-26 18:54:50,844 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:82]
+2020-06-28 15:35:09,834 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:82]
+2020-06-29 09:46:32,026 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:82]
+2020-06-29 09:46:35,231 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:82]
+2020-06-29 09:48:12,090 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:82]
+2020-06-29 09:48:42,939 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:82]
+2020-06-29 10:16:47,702 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:82]
+2020-06-29 10:38:21,317 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:86]
+2020-06-29 10:38:51,417 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:86]
+2020-06-29 11:05:26,360 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:86]
+2020-06-29 11:08:06,058 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:86]
+2020-06-29 11:08:07,947 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:86]
+2020-06-29 11:08:14,556 ERROR: Exception on /contents/['hellostranger.txt', 'hello_world.txt'] [GET] [in /Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/elee/practice_app/microblog/app/main/routes.py", line 208, in print_file
+    with open(saved_file, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/elee/practice_app/microblog/uploads/['
+2020-06-29 13:18:47,844 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:86]
+2020-06-29 13:18:51,022 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:86]

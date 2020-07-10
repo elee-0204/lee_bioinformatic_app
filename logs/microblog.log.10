@@ -1,0 +1,110 @@
+2020-06-25 15:45:27,635 ERROR: Exception on /uploadfile [POST] [in /Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/elee/practice_docker/microblog/app/main/routes.py", line 168, in upload_file
+    if request.POST and form.validate():
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'Request' object has no attribute 'POST'
+2020-06-25 15:45:30,425 ERROR: Exception on /uploadfile [GET] [in /Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/elee/practice_docker/microblog/app/main/routes.py", line 168, in upload_file
+    if request.POST and form.validate():
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'Request' object has no attribute 'POST'
+2020-06-25 15:46:13,519 INFO: Microblog startup [in /Users/elee/practice_docker/microblog/app/__init__.py:77]
+2020-06-25 15:46:15,270 INFO: Microblog startup [in /Users/elee/practice_docker/microblog/app/__init__.py:77]
+2020-06-25 15:47:55,895 INFO: Microblog startup [in /Users/elee/practice_docker/microblog/app/__init__.py:77]
+2020-06-25 15:47:57,752 INFO: Microblog startup [in /Users/elee/practice_docker/microblog/app/__init__.py:77]
+2020-06-25 15:51:35,676 INFO: Microblog startup [in /Users/elee/practice_docker/microblog/app/__init__.py:77]
+2020-06-25 15:51:37,897 INFO: Microblog startup [in /Users/elee/practice_docker/microblog/app/__init__.py:77]
+2020-06-25 15:51:45,625 ERROR: Exception on /uploadfile [POST] [in /Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/elee/practice_docker/microblog/app/main/routes.py", line 178, in upload_file
+    if file and allowed_file(file.filename):
+  File "/Users/elee/practice_docker/microblog/app/processing.py", line 10, in allowed_file
+    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+NameError: name 'ALLOWED_EXTENSIONS' is not defined
+2020-06-25 15:53:15,003 INFO: Microblog startup [in /Users/elee/practice_docker/microblog/app/__init__.py:77]
+2020-06-25 15:53:19,192 ERROR: Exception on /uploadfile [POST] [in /Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/elee/practice_docker/microblog/app/main/routes.py", line 180, in upload_file
+    file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+NameError: name 'os' is not defined
+2020-06-25 15:54:38,458 INFO: Microblog startup [in /Users/elee/practice_docker/microblog/app/__init__.py:77]
+2020-06-25 15:54:46,001 ERROR: Exception on /uploadfile [POST] [in /Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/elee/practice_docker/microblog/app/main/routes.py", line 181, in upload_file
+    file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+NameError: name 'app' is not defined
+2020-06-25 15:56:15,978 INFO: Microblog startup [in /Users/elee/practice_docker/microblog/app/__init__.py:77]

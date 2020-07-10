@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+
+{% block app_content %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+        
+            <h1>Text File Processor</h1>
+            <hr>
+            <h3>Download Processed Files</h3>
+            <p> Download the modified .txt file(s) in by clicking on each file below or download all as zip. </p>
+            <body class="body">
+               <div class="container" align="left">
+               {% for file in filenames %}
+                  <li><a href="/return-files/{{file}}">{{file}}</a></li>
+               {% endfor %}
+               </div>
+               <br>
+               <div class="container" align="left">
+                   <p> 
+                   <a href={{url_for('main.zipped_data')}}><button class='btn btn-default'>Download All</button></a>
+                   </p>
+               </div>
+               {% if refresh %}
+               <meta http-equiv="refresh" content="5">
+               {% endif %}
+           </body>  
+                   
+           
+           <hr>
+           <h4>Your file(s) have been processed as shown below.</h4>
+            
+            <p>
+        	{% for file in filenames %}
+            <div><p>{{ file }} now says: </p>
+            <p style="background-color:lightgray;"><b>{{ text[file] }}</b></p></div>
+            {% endfor %}
+            </p>
+      
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+

@@ -1,0 +1,119 @@
+2020-07-01 13:38:45,195 ERROR: Exception on /contents/['whatsup.txt'] [GET] [in /Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/elee/heroku_v5/microblog/app/main/routes.py", line 230, in print_file
+    for i in len(bucket.objects.all()):
+TypeError: object of type 's3.Bucket.objectsCollection' has no len()
+2020-07-01 13:40:42,968 INFO: Microblog startup [in /Users/elee/heroku_v5/microblog/app/__init__.py:86]
+2020-07-01 13:40:55,986 ERROR: Exception on /contents/['whatsup.txt'] [GET] [in /Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/elee/heroku_v5/microblog/app/main/routes.py", line 231, in print_file
+    for i in len(filenames):
+TypeError: 'int' object is not iterable
+2020-07-01 13:43:04,698 INFO: Microblog startup [in /Users/elee/heroku_v5/microblog/app/__init__.py:86]
+2020-07-01 13:43:11,608 ERROR: Exception on /contents/['whatsup.txt'] [GET] [in /Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/elee/heroku_v5/microblog/app/main/routes.py", line 233, in print_file
+    obj = (files_in_s3)[i]
+TypeError: 's3.Bucket.objectsCollection' object is not subscriptable
+2020-07-01 13:47:02,203 INFO: Microblog startup [in /Users/elee/heroku_v5/microblog/app/__init__.py:86]
+2020-07-01 13:47:10,595 ERROR: Exception on /contents/['whatsup.txt'] [GET] [in /Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/elee/heroku_v5/microblog/app/main/routes.py", line 235, in print_file
+    text[key] = body
+TypeError: unhashable type: 'dict'
+2020-07-01 14:08:09,674 INFO: Microblog startup [in /Users/elee/heroku_v5/microblog/app/__init__.py:86]
+2020-07-01 14:08:14,810 ERROR: Exception on /contents/['whatsup.txt'] [GET] [in /Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/elee/heroku_v5/microblog/app/main/routes.py", line 233, in print_file
+    key = filenames[i].key
+AttributeError: 'dict' object has no attribute 'key'
+2020-07-01 14:08:25,677 ERROR: Exception on /contents/['whatsup.txt'] [GET] [in /Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/elee/heroku_v5/microblog/app/main/routes.py", line 233, in print_file
+    key = filenames[i].key
+AttributeError: 'dict' object has no attribute 'key'
+2020-07-01 14:08:49,966 INFO: Microblog startup [in /Users/elee/heroku_v5/microblog/app/__init__.py:86]

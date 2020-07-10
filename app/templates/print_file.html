@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+
+{% block app_content %}      
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  width: 75%;
+  float: center;
+  padding: 15px;
+}
+
+.main {
+  width: 75%;
+  float: center;
+  padding: 15px;
+}
+</style>
+<body>
+
+<h1>Text File Processor</h1>
+<hr>            
+<h3>Process Your Files</h3>
+<p> You may choose to process your files by running them through two different script versions below. One will add the phrase "this is a test" whereas the other adds the phrase "this isn't a test."</p>
+                 
+            
+<div class="main">
+  <h4><u>Option 1) This IS a test</u></h4>
+ 
+  <p> Press the process button below to modify your .txt files to include the phrase 'This is a test.'</p>
+  <div class="container" align="left">
+  <p><a href={{url_for('main.process_files_1')}}><button class='btn btn-default'>Process to add <b><i>'this is a test'</b></i></button></a></p>
+  </div>
+        
+</div>
+
+<div class="main">
+  <h4><u>Option 2) This ISN'T a test</u></h4>
+ 
+  <p> Press the process button below to modify your .txt files to include the phrase 'This isn't a test.'</p>
+  <div class="container" align="left">
+  <p><a href={{url_for('main.process_files_2')}}><button class='btn btn-default'>Process to add <b><i>'this isn't a test'</b></i></button></a></p>
+  </div>
+     
+</div>
+
+<br> 
+<hr>
+<h4>Your file(s) currrently have the following content. </h4>
+    <p>
+    {% for file in files %}
+    <div><p>{{ file }} says: </p>
+        <p style="background-color:lightgray;"><b>{{ text[file] }}</b></p></div>
+    {% endfor %}</p><hr>
+            
+</body>  
+{% endblock %}

@@ -1,0 +1,101 @@
+2020-07-01 13:16:36,076 ERROR: Exception on /contents/['whatsup.txt'] [GET] [in /Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/elee/heroku_v5/microblog/app/main/routes.py", line 223, in print_file
+    body = obj.get()['Body'].read()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/boto3/resources/factory.py", line 520, in do_action
+    response = action(self, *args, **kwargs)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/boto3/resources/action.py", line 83, in __call__
+    response = getattr(parent.meta.client, operation_name)(*args, **params)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/botocore/client.py", line 316, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/botocore/client.py", line 608, in _make_api_call
+    api_params, operation_model, context=request_context)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/botocore/client.py", line 656, in _convert_to_request_dict
+    api_params, operation_model)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/botocore/validate.py", line 297, in serialize_to_request
+    raise ParamValidationError(report=report.generate_report())
+botocore.exceptions.ParamValidationError: Parameter validation failed:
+Invalid type for parameter Key, value: {'Key': 'uploads/whatsup.txt', 'LastModified': datetime.datetime(2020, 7, 1, 17, 16, 36, tzinfo=tzutc()), 'ETag': '"2893941938fcc67492ee3ebd8fff2866"', 'Size': 47, 'StorageClass': 'STANDARD', 'Owner': {'ID': 'c9012b0300df8677e760b0460d05c7694445324968a2b8eda2e36f9f663345f3'}}, type: <class 'dict'>, valid types: <class 'str'>
+2020-07-01 13:18:02,823 INFO: Microblog startup [in /Users/elee/heroku_v5/microblog/app/__init__.py:86]
+2020-07-01 13:18:09,138 ERROR: Exception on /contents/['whatsup.txt'] [GET] [in /Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/elee/heroku_v5/microblog/app/main/routes.py", line 223, in print_file
+    body = obj.get()['Body'].read()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/boto3/resources/factory.py", line 520, in do_action
+    response = action(self, *args, **kwargs)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/boto3/resources/action.py", line 83, in __call__
+    response = getattr(parent.meta.client, operation_name)(*args, **params)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/botocore/client.py", line 316, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/botocore/client.py", line 608, in _make_api_call
+    api_params, operation_model, context=request_context)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/botocore/client.py", line 656, in _convert_to_request_dict
+    api_params, operation_model)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/botocore/validate.py", line 297, in serialize_to_request
+    raise ParamValidationError(report=report.generate_report())
+botocore.exceptions.ParamValidationError: Parameter validation failed:
+Invalid type for parameter Key, value: {'Key': 'uploads/whatsup.txt', 'LastModified': datetime.datetime(2020, 7, 1, 17, 18, 9, tzinfo=tzutc()), 'ETag': '"2893941938fcc67492ee3ebd8fff2866"', 'Size': 47, 'StorageClass': 'STANDARD', 'Owner': {'ID': 'c9012b0300df8677e760b0460d05c7694445324968a2b8eda2e36f9f663345f3'}}, type: <class 'dict'>, valid types: <class 'str'>
+2020-07-01 13:21:50,838 INFO: Microblog startup [in /Users/elee/heroku_v5/microblog/app/__init__.py:86]
+2020-07-01 13:21:57,866 ERROR: Exception on /contents/['whatsup.txt'] [GET] [in /Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/elee/heroku_v5/microblog/app/main/routes.py", line 223, in print_file
+    body = obj.get()['Body'].read()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/boto3/resources/factory.py", line 520, in do_action
+    response = action(self, *args, **kwargs)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/boto3/resources/action.py", line 83, in __call__
+    response = getattr(parent.meta.client, operation_name)(*args, **params)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/botocore/client.py", line 316, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/botocore/client.py", line 608, in _make_api_call
+    api_params, operation_model, context=request_context)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/botocore/client.py", line 656, in _convert_to_request_dict
+    api_params, operation_model)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/botocore/validate.py", line 297, in serialize_to_request
+    raise ParamValidationError(report=report.generate_report())
+botocore.exceptions.ParamValidationError: Parameter validation failed:
+Invalid type for parameter Key, value: {'Key': 'uploads/whatsup.txt', 'LastModified': datetime.datetime(2020, 7, 1, 17, 21, 58, tzinfo=tzutc()), 'ETag': '"2893941938fcc67492ee3ebd8fff2866"', 'Size': 47, 'StorageClass': 'STANDARD', 'Owner': {'ID': 'c9012b0300df8677e760b0460d05c7694445324968a2b8eda2e36f9f663345f3'}}, type: <class 'dict'>, valid types: <class 'str'>
+2020-07-01 13:25:17,470 INFO: Microblog startup [in /Users/elee/heroku_v5/microblog/app/__init__.py:86]
+2020-07-01 13:27:27,920 INFO: Microblog startup [in /Users/elee/heroku_v5/microblog/app/__init__.py:86]
+2020-07-01 13:38:35,863 INFO: Microblog startup [in /Users/elee/heroku_v5/microblog/app/__init__.py:86]

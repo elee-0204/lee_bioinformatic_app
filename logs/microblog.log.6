@@ -1,0 +1,163 @@
+2020-06-29 13:19:02,540 ERROR: Exception on /contents/['hellostranger.txt', 'hello_world.txt', 'hello_world_1.txt', 'helloworldmodified.txt'] [GET] [in /Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/elee/practice_app/microblog/app/main/routes.py", line 208, in print_file
+    with open(saved_file, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/elee/practice_app/microblog/uploads/['
+2020-06-29 13:46:23,595 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 14:30:17,564 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 14:30:17,610 ERROR: Unhandled exception [in ./app/tasks.py:46]
+Traceback (most recent call last):
+  File "./app/tasks.py", line 36, in process_files
+    filenames = os.listdir(current_app.config['UPLOAD_FOLDER'])
+NameError: name 'current_app' is not defined
+2020-06-29 15:01:08,392 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 15:01:08,444 ERROR: Unhandled exception [in ./app/tasks.py:46]
+Traceback (most recent call last):
+  File "./app/tasks.py", line 36, in process_files
+    filenames = os.listdir(current_app.config['UPLOAD_FOLDER'])
+NameError: name 'current_app' is not defined
+2020-06-29 15:07:07,620 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 15:07:07,668 ERROR: Unhandled exception [in ./app/tasks.py:46]
+Traceback (most recent call last):
+  File "./app/tasks.py", line 36, in process_files
+    filenames = os.listdir(current_app.config['UPLOAD_FOLDER'])
+NameError: name 'current_app' is not defined
+2020-06-29 15:36:56,051 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 15:36:56,102 ERROR: Unhandled exception [in ./app/tasks.py:46]
+Traceback (most recent call last):
+  File "./app/tasks.py", line 36, in process_files
+    filenames = os.listdir(current_app.config['UPLOAD_FOLDER'])
+NameError: name 'current_app' is not defined
+2020-06-29 15:46:43,015 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 15:46:43,061 ERROR: Unhandled exception [in ./app/tasks.py:46]
+Traceback (most recent call last):
+  File "./app/tasks.py", line 36, in process_files
+    filenames = os.listdir(current_app.config['UPLOAD_FOLDER'])
+NameError: name 'current_app' is not defined
+2020-06-29 15:47:11,975 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 15:47:12,025 ERROR: Unhandled exception [in ./app/tasks.py:46]
+Traceback (most recent call last):
+  File "./app/tasks.py", line 36, in process_files
+    filenames = os.listdir(current_app.config['UPLOAD_FOLDER'])
+NameError: name 'current_app' is not defined
+2020-06-29 15:50:26,998 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 15:50:27,037 ERROR: Unhandled exception [in ./app/tasks.py:46]
+Traceback (most recent call last):
+  File "./app/tasks.py", line 36, in process_files
+    filenames = os.listdir(current_app.config['UPLOAD_FOLDER'])
+NameError: name 'current_app' is not defined
+2020-06-29 16:02:51,867 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 16:02:51,910 ERROR: Unhandled exception [in ./app/tasks.py:46]
+Traceback (most recent call last):
+  File "./app/tasks.py", line 36, in process_files
+    filenames = os.listdir(current_app.config['UPLOAD_FOLDER'])
+NameError: name 'current_app' is not defined
+2020-06-29 16:03:10,280 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 16:03:10,551 ERROR: Unhandled exception [in ./app/tasks.py:46]
+Traceback (most recent call last):
+  File "./app/tasks.py", line 36, in process_files
+    filenames = os.listdir(current_app.config['UPLOAD_FOLDER'])
+NameError: name 'current_app' is not defined
+2020-06-29 16:04:48,709 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 16:04:48,761 ERROR: Unhandled exception [in ./app/tasks.py:46]
+Traceback (most recent call last):
+  File "./app/tasks.py", line 36, in process_files
+    filenames = os.listdir(current_app.config['UPLOAD_FOLDER'])
+NameError: name 'current_app' is not defined
+2020-06-29 16:07:30,778 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 16:07:30,822 ERROR: Unhandled exception [in ./app/tasks.py:46]
+Traceback (most recent call last):
+  File "./app/tasks.py", line 36, in process_files
+    filenames = os.listdir(current_app.config['UPLOAD_FOLDER'])
+NameError: name 'current_app' is not defined
+2020-06-29 16:08:56,283 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 16:08:56,355 ERROR: Unhandled exception [in ./app/tasks.py:46]
+Traceback (most recent call last):
+  File "./app/tasks.py", line 36, in process_files
+    filenames = os.listdir(current_app.config['UPLOAD_FOLDER'])
+NameError: name 'current_app' is not defined
+2020-06-29 16:20:24,040 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 16:20:24,088 ERROR: Unhandled exception [in ./app/tasks.py:46]
+Traceback (most recent call last):
+  File "./app/tasks.py", line 36, in process_files
+    filenames = os.listdir(current_app.config['UPLOAD_FOLDER'])
+NameError: name 'current_app' is not defined
+2020-06-29 16:23:22,960 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 16:23:23,012 ERROR: Unhandled exception [in ./app/tasks.py:46]
+Traceback (most recent call last):
+  File "./app/tasks.py", line 36, in process_files
+    filenames = os.listdir(current_app.config['UPLOAD_FOLDER'])
+NameError: name 'current_app' is not defined
+2020-06-29 16:25:22,150 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 16:25:22,171 ERROR: Unhandled exception [in ./app/tasks.py:46]
+Traceback (most recent call last):
+  File "./app/tasks.py", line 36, in process_files
+    filenames = os.listdir(current_app.config['UPLOAD_FOLDER'])
+NameError: name 'current_app' is not defined
+2020-06-29 16:26:55,184 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 16:26:55,218 ERROR: Unhandled exception [in ./app/tasks.py:46]
+Traceback (most recent call last):
+  File "./app/tasks.py", line 36, in process_files
+    filenames = os.listdir(current_app.config['UPLOAD_FOLDER'])
+NameError: name 'current_app' is not defined
+2020-06-29 16:30:40,238 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 16:30:40,279 ERROR: Unhandled exception [in ./app/tasks.py:46]
+Traceback (most recent call last):
+  File "./app/tasks.py", line 36, in process_files
+    filenames = os.listdir(current_app.config['UPLOAD_FOLDER'])
+NameError: name 'current_app' is not defined
+2020-06-29 16:37:31,974 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 16:38:28,970 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 16:39:59,287 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 16:40:26,124 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 16:42:08,428 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 16:43:27,296 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 16:57:17,344 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 16:57:34,550 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 16:59:33,443 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 17:00:49,501 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 17:01:56,941 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 17:04:18,305 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 17:05:11,889 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 17:08:20,363 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 17:08:44,191 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 17:10:54,456 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 17:10:54,515 ERROR: Unhandled exception [in ./app/tasks.py:47]
+Traceback (most recent call last):
+  File "./app/tasks.py", line 38, in process_files
+    shutil.rmtree(current_app.config['DOWNLOAD_FOLDER'])
+NameError: name 'shutil' is not defined
+2020-06-29 17:13:02,227 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 17:13:02,280 ERROR: Unhandled exception [in ./app/tasks.py:48]
+Traceback (most recent call last):
+  File "./app/tasks.py", line 39, in process_files
+    shutil.rmtree(current_app.config['DOWNLOAD_FOLDER'])
+NameError: name 'current_app' is not defined
+2020-06-29 17:14:04,415 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 17:14:04,467 ERROR: Unhandled exception [in ./app/tasks.py:48]
+Traceback (most recent call last):
+  File "./app/tasks.py", line 39, in process_files
+    shutil.rmtree(current_app.config['DOWNLOAD_FOLDER'])
+NameError: name 'current_app' is not defined
+2020-06-29 17:17:19,300 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 17:17:47,305 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 17:19:37,301 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 17:19:56,889 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 19:20:52,242 INFO: Microblog startup [in /Users/elee/practice_app/microblog/app/__init__.py:86]
+2020-06-29 19:21:27,004 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 19:21:57,837 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-06-29 19:22:41,238 INFO: Microblog startup [in ./app/__init__.py:86]

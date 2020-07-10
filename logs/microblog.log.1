@@ -1,0 +1,112 @@
+2020-07-01 14:09:03,912 ERROR: Exception on /contents/['whatsup.txt'] [GET] [in /Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/elee/heroku_v5/microblog/app/main/routes.py", line 233, in print_file
+    key = filenames[i].Key
+AttributeError: 'dict' object has no attribute 'Key'
+2020-07-01 14:11:55,377 INFO: Microblog startup [in /Users/elee/heroku_v5/microblog/app/__init__.py:86]
+2020-07-01 14:12:26,102 INFO: Microblog startup [in /Users/elee/heroku_v5/microblog/app/__init__.py:86]
+2020-07-01 14:12:33,358 ERROR: Exception on /contents/['whatsup.txt'] [GET] [in /Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/elee/heroku_v5/microblog/app/main/routes.py", line 233, in print_file
+    key = obj.key['Key']
+TypeError: string indices must be integers
+2020-07-02 12:45:49,225 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-07-02 12:48:44,981 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-07-02 12:48:45,726 ERROR: Unhandled exception [in ./app/tasks.py:55]
+Traceback (most recent call last):
+  File "./app/tasks.py", line 46, in process_files
+    output_path = os.path.join(DOWNLOAD_FOLDER, filename)
+NameError: name 'DOWNLOAD_FOLDER' is not defined
+2020-07-02 12:52:15,775 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-07-02 12:52:16,557 ERROR: Unhandled exception [in ./app/tasks.py:55]
+Traceback (most recent call last):
+  File "./app/tasks.py", line 46, in process_files
+    output_path = os.path.join(DOWNLOAD_FOLDER, filename)
+NameError: name 'DOWNLOAD_FOLDER' is not defined
+2020-07-02 12:55:28,764 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-07-02 12:55:29,724 ERROR: Unhandled exception [in ./app/tasks.py:55]
+Traceback (most recent call last):
+  File "./app/tasks.py", line 46, in process_files
+    output_path = os.path.join(DOWNLOAD_FOLDER, filename)
+NameError: name 'DOWNLOAD_FOLDER' is not defined
+2020-07-02 12:57:26,471 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-07-02 12:57:28,166 ERROR: Unhandled exception [in ./app/tasks.py:56]
+Traceback (most recent call last):
+  File "./app/tasks.py", line 51, in process_files
+    upload_processed_files(output_path, "leelab-processed", filename)
+NameError: name 'upload_processed_files' is not defined
+2020-07-02 12:58:17,421 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-07-02 12:58:19,342 ERROR: Unhandled exception [in ./app/tasks.py:56]
+Traceback (most recent call last):
+  File "./app/tasks.py", line 51, in process_files
+    upload_processed_files(output_path, "leelab-processed", filename)
+  File "./app/s3_demo.py", line 33, in upload_processed_files
+    response = s3_client.upload_file(file_path, bucket, object_name)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/boto3/s3/inject.py", line 131, in upload_file
+    extra_args=ExtraArgs, callback=Callback)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/boto3/s3/transfer.py", line 279, in upload_file
+    future.result()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/s3transfer/futures.py", line 106, in result
+    return self._coordinator.result()
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/s3transfer/futures.py", line 265, in result
+    raise self._exception
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/s3transfer/tasks.py", line 255, in _main
+    self._submit(transfer_future=transfer_future, **kwargs)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/s3transfer/upload.py", line 549, in _submit
+    upload_input_manager.provide_transfer_size(transfer_future)
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/s3transfer/upload.py", line 237, in provide_transfer_size
+    transfer_future.meta.call_args.fileobj))
+  File "/Users/elee/ubuntu/microblog/venv/lib/python3.7/site-packages/s3transfer/utils.py", line 245, in get_file_size
+    return os.path.getsize(filename)
+  File "/opt/anaconda3/lib/python3.7/genericpath.py", line 50, in getsize
+    return os.stat(filename).st_size
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/elee/heroku_v5/microblog/app/downloads/hello_world.txt'
+2020-07-02 13:16:29,382 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-07-02 13:17:44,529 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-07-02 13:50:54,479 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-07-02 13:52:11,776 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-07-02 14:33:24,168 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-07-02 14:35:05,680 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-07-02 14:35:36,411 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-07-02 14:36:22,684 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-07-02 14:51:11,795 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-07-02 14:51:51,288 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-07-02 14:55:48,642 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-07-02 21:50:42,311 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-07-02 22:02:25,866 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-07-02 23:00:11,522 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-07-02 23:03:00,110 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-07-03 00:10:05,571 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-07-03 11:03:54,841 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-07-03 11:04:20,520 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-07-03 11:08:57,265 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-07-03 11:09:38,344 INFO: Microblog startup [in ./app/__init__.py:86]
+2020-07-08 12:51:42,819 INFO: Microblog startup [in /Users/elee/heroku_v6/microblog/app/__init__.py:86]

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+
+{% block app_content %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+        
+            <h1>Violin Plot Maker</h1>
+            <hr>      
+            <h4>Your datasets provided the following plots.</h4>
+    
+            <body class="body">
+               <div class="container" align="left">
+               {% for file in filenames %}
+                   <p>{{file}}</p>
+                   <iframe src="https://leelab-processed.s3.us-east-2.amazonaws.com/{{file}}" width="100%" height="500px"></iframe>
+                   <br>
+               {% endfor %}
+               </div>
+           </body>  
+           
+           
+        </div>
+        
+    </div>
+</div>
+{% endblock %}
